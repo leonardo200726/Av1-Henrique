@@ -63,6 +63,7 @@ app.use((req, res) => {
     res.status(404).send("Página não encontrada");
 });
 
+// servidor HTTP simples (não precisa de certificados)
 app.listen(PORTA, () => {
     console.log(`Servidor rodando em http://localhost:${PORTA}`);
-});
+    });
